@@ -4,7 +4,7 @@
  */
 package com.app.main;
 
-import com.raven.swing.ComponentResizer;
+import com.app.swing.ComponentResizer;
 import java.awt.Dimension;
 import java.awt.Toolkit;
 import javax.swing.ImageIcon;
