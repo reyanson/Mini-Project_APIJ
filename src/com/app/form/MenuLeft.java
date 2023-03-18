@@ -4,27 +4,17 @@
  */
 package com.app.form;
 
-import net.miginfocom.swing.MigLayout;
-
 /**
  *
  * @author reyanson
  */
-public class Home extends javax.swing.JLayeredPane {
+public class MenuLeft extends javax.swing.JPanel {
 
     /**
-     * Creates new form Home
+     * Creates new form MenuLeft
      */
-    public Home() {
+    public MenuLeft() {
         initComponents();
-        init();
-    }
-    
-    private void init(){
-        setLayout(new MigLayout("fillx, filly","0[200!]5[fill,100%]5[200!]0","0[]0"));
-        this.add(new MenuLeft());
-        this.add(new Chat());
-        this.add(new MenuRight());
     }
 
     /**
@@ -36,19 +26,36 @@ public class Home extends javax.swing.JLayeredPane {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        menuButton1 = new com.app.component.MenuButton();
+        menuButton2 = new com.app.component.MenuButton();
+        menuButton3 = new com.app.component.MenuButton();
+        menu = new javax.swing.JLayeredPane();
+
+        setBackground(new java.awt.Color(229, 229, 229));
+
+        menu.setLayout(new javax.swing.BoxLayout(menu, javax.swing.BoxLayout.LINE_AXIS));
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 1011, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addComponent(menu, javax.swing.GroupLayout.DEFAULT_SIZE, 194, Short.MAX_VALUE)
+                .addContainerGap())
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 552, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addComponent(menu, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 653, Short.MAX_VALUE))
         );
     }// </editor-fold>//GEN-END:initComponents
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JLayeredPane menu;
+    private com.app.component.MenuButton menuButton1;
+    private com.app.component.MenuButton menuButton2;
+    private com.app.component.MenuButton menuButton3;
     // End of variables declaration//GEN-END:variables
 }

@@ -250,6 +250,7 @@ public class ComponentResizer extends MouseAdapter {
 	}
 
 	/**
+     * @param e
 	 */
 	@Override
 	public void mouseMoved(MouseEvent e)

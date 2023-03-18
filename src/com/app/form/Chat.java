@@ -4,27 +4,17 @@
  */
 package com.app.form;
 
-import net.miginfocom.swing.MigLayout;
-
 /**
  *
  * @author reyanson
  */
-public class Home extends javax.swing.JLayeredPane {
+public class Chat extends javax.swing.JPanel {
 
     /**
-     * Creates new form Home
+     * Creates new form MenuLeft
      */
-    public Home() {
+    public Chat() {
         initComponents();
-        init();
-    }
-    
-    private void init(){
-        setLayout(new MigLayout("fillx, filly","0[200!]5[fill,100%]5[200!]0","0[]0"));
-        this.add(new MenuLeft());
-        this.add(new Chat());
-        this.add(new MenuRight());
     }
 
     /**
@@ -36,19 +26,32 @@ public class Home extends javax.swing.JLayeredPane {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jLabel1 = new javax.swing.JLabel();
+
+        setBackground(new java.awt.Color(229, 229, 229));
+
+        jLabel1.setText("Chat");
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 1011, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jLabel1)
+                .addContainerGap(164, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 552, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addGap(114, 114, 114)
+                .addComponent(jLabel1)
+                .addContainerGap(560, Short.MAX_VALUE))
         );
     }// </editor-fold>//GEN-END:initComponents
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JLabel jLabel1;
     // End of variables declaration//GEN-END:variables
 }
