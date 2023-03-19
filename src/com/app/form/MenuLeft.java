@@ -4,6 +4,9 @@
  */
 package com.app.form;
 
+import com.app.component.Item_People;
+import net.miginfocom.swing.MigLayout;
+
 /**
  *
  * @author reyanson
@@ -15,7 +18,23 @@ public class MenuLeft extends javax.swing.JPanel {
      */
     public MenuLeft() {
         initComponents();
+        init();
+        
+        
     }
+    
+    private void init(){
+        menuList.setLayout(new MigLayout("fillx","0[]0","1[]1"));
+        showPeople();
+    }
+    
+    private void showPeople(){
+        //create Item_People class and add to menuList
+        for(int i = 0; i<8;i++){
+            menuList.add(new Item_People("People "+ i),"wrap");
+        }
+    }
+    
 
     /**
      * This method is called from within the constructor to initialize the form.
@@ -30,26 +49,83 @@ public class MenuLeft extends javax.swing.JPanel {
         menuButton2 = new com.app.component.MenuButton();
         menuButton3 = new com.app.component.MenuButton();
         menu = new javax.swing.JLayeredPane();
+        menuButton4 = new com.app.component.MenuButton();
+        menuButton5 = new com.app.component.MenuButton();
+        menuButton6 = new com.app.component.MenuButton();
+        menuList = new javax.swing.JLayeredPane();
 
-        setBackground(new java.awt.Color(229, 229, 229));
-
+        menu.setBackground(new java.awt.Color(229, 229, 229));
+        menu.setOpaque(true);
         menu.setLayout(new javax.swing.BoxLayout(menu, javax.swing.BoxLayout.LINE_AXIS));
+
+        menuButton4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/app/icon/message_selected.png"))); // NOI18N
+        menuButton4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                menuButton4ActionPerformed(evt);
+            }
+        });
+        menu.add(menuButton4);
+
+        menuButton5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/app/icon/group.png"))); // NOI18N
+        menuButton5.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                menuButton5ActionPerformed(evt);
+            }
+        });
+        menu.add(menuButton5);
+
+        menuButton6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/app/icon/box.png"))); // NOI18N
+        menuButton6.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                menuButton6ActionPerformed(evt);
+            }
+        });
+        menu.add(menuButton6);
+
+        javax.swing.GroupLayout menuListLayout = new javax.swing.GroupLayout(menuList);
+        menuList.setLayout(menuListLayout);
+        menuListLayout.setHorizontalGroup(
+            menuListLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 0, Short.MAX_VALUE)
+        );
+        menuListLayout.setVerticalGroup(
+            menuListLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 629, Short.MAX_VALUE)
+        );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addComponent(menu, javax.swing.GroupLayout.DEFAULT_SIZE, 194, Short.MAX_VALUE)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(menu, javax.swing.GroupLayout.DEFAULT_SIZE, 194, Short.MAX_VALUE)
+                    .addGroup(layout.createSequentialGroup()
+                        .addContainerGap()
+                        .addComponent(menuList)))
                 .addContainerGap())
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addComponent(menu, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 653, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(menuList)
+                .addContainerGap())
         );
     }// </editor-fold>//GEN-END:initComponents
+
+    private void menuButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_menuButton4ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_menuButton4ActionPerformed
+
+    private void menuButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_menuButton5ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_menuButton5ActionPerformed
+
+    private void menuButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_menuButton6ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_menuButton6ActionPerformed
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
@@ -57,5 +133,9 @@ public class MenuLeft extends javax.swing.JPanel {
     private com.app.component.MenuButton menuButton1;
     private com.app.component.MenuButton menuButton2;
     private com.app.component.MenuButton menuButton3;
+    private com.app.component.MenuButton menuButton4;
+    private com.app.component.MenuButton menuButton5;
+    private com.app.component.MenuButton menuButton6;
+    private javax.swing.JLayeredPane menuList;
     // End of variables declaration//GEN-END:variables
 }
