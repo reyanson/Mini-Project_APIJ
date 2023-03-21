@@ -27,15 +27,42 @@ public class MenuLeft extends javax.swing.JPanel {
     private void init(){
         sp.setVerticalScrollBar(new ScrollBar());
         menuList.setLayout(new MigLayout("fillx","0[]0","0[]0"));
-        showPeople();
+        showMessage();
     }
     
-    private void showPeople(){
+    private void showMessage(){
         //create Item_People class and add to menuList
+        menuList.removeAll();
         for(int i = 0; i<20;i++){
             menuList.add(new Item_People("People "+ i),"wrap");
         }
+        refreshMenuList();
     }
+    
+    private void showGroup(){
+        //create Item_People class and add to menuList
+        menuList.removeAll();
+        for(int i = 0; i<20;i++){
+            menuList.add(new Item_People("Group "+ i),"wrap");
+        }
+        refreshMenuList();
+    }
+    
+    private void showBox(){
+        //create Item_People class and add to menuList
+        menuList.removeAll();
+        for(int i = 0; i<20;i++){
+            menuList.add(new Item_People("Box "+ i),"wrap");
+        }
+        refreshMenuList();
+    }
+    
+    private void refreshMenuList(){
+        menuList.repaint();
+        menuList.revalidate();
+    }
+    
+    
     
 
     /**
@@ -59,11 +86,11 @@ public class MenuLeft extends javax.swing.JPanel {
 
         menu.setBackground(new java.awt.Color(229, 229, 229));
         menu.setOpaque(true);
-        menu.setLayout(new javax.swing.BoxLayout(menu, javax.swing.BoxLayout.LINE_AXIS));
+        menu.setLayout(new java.awt.GridLayout(1, 3));
 
-        menuMessage.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/app/icon/message_selected.png"))); // NOI18N
         menuMessage.setIconSelected(new javax.swing.ImageIcon(getClass().getResource("/com/app/icon/message_selected.png"))); // NOI18N
         menuMessage.setIconSimple(new javax.swing.ImageIcon(getClass().getResource("/com/app/icon/message.png"))); // NOI18N
+        menuMessage.setSelected(true);
         menuMessage.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 menuMessageActionPerformed(evt);
@@ -91,9 +118,11 @@ public class MenuLeft extends javax.swing.JPanel {
         });
         menu.add(menuBox);
 
-        sp.setBackground(new java.awt.Color(214, 217, 223));
+        sp.setBackground(new java.awt.Color(242, 242, 242));
         sp.setBorder(null);
         sp.setHorizontalScrollBarPolicy(javax.swing.ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
+
+        menuList.setOpaque(true);
 
         javax.swing.GroupLayout menuListLayout = new javax.swing.GroupLayout(menuList);
         menuList.setLayout(menuListLayout);
@@ -129,23 +158,39 @@ public class MenuLeft extends javax.swing.JPanel {
 
     private void menuMessageActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_menuMessageActionPerformed
         // TODO add your handling code here:
-        menuMessage.setSelected(true);
-        menuGroup.setSelected(false);
-        menuBox.setSelected(false);
+        if(!menuMessage.isSelected()){
+            
+            menuMessage.setSelected(true);
+            menuGroup.setSelected(false);
+            menuBox.setSelected(false);
+            showMessage();
+        }
+        
     }//GEN-LAST:event_menuMessageActionPerformed
 
     private void menuGroupActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_menuGroupActionPerformed
         // TODO add your handling code here:
-        menuMessage.setSelected(false);
-        menuGroup.setSelected(true);
-        menuBox.setSelected(false);
+        if(!menuGroup.isSelected()){
+            
+            menuMessage.setSelected(false);
+            menuGroup.setSelected(true);
+            menuBox.setSelected(false);
+            showGroup();
+            
+        }
+        
     }//GEN-LAST:event_menuGroupActionPerformed
 
     private void menuBoxActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_menuBoxActionPerformed
         // TODO add your handling code here:
-        menuMessage.setSelected(false);
-        menuGroup.setSelected(false);
-        menuBox.setSelected(true);
+        if(!menuBox.isSelected()){
+            
+            menuMessage.setSelected(false);
+            menuGroup.setSelected(false);
+            menuBox.setSelected(true);
+            showBox();
+        }
+        
     }//GEN-LAST:event_menuBoxActionPerformed
 
 
