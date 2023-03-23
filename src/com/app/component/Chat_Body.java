@@ -21,18 +21,20 @@ public class Chat_Body extends javax.swing.JPanel {
         initComponents();
         init();
         addItemLeft("Helloaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaddddddddddddddddddddddddddddddddddddddddddddddddcfwwffdnvkjnbd mv m kbdndjkvnkjndvjndjj");
-        addItemLeft("Helloaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaddddddddddddddddddddddddddddddddddddddddddddddddcfwwffdnvkjnbd mv m kbdndjkvnkjndvjndjj");
+        addItemLeft("kbdndjkvnkjndvjndjj");
         addItemRight("Helloaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaddddddddddddddddddddddddddddddddddddddddddddddddcfwwffdnvkjnbd mv m kbdndjkvnkjndvjndjj");
-        addItemLeft("Helloaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaddddddddddddddddddddddddddddddddddddddddddddddddcfwwffdnvkjnbd mv m kbdndjkvnkjndvjndjj");
-        addItemRight("Helloaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaddddddddddddddddddddddddddddddddddddddddddddddddcfwwffdnvkjnbd mv m kbdndjkvnkjndvjndjj");
-        addItemLeft("Helloaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaddddddddddddddddddddddddddddddddddddddddddddddddcfwwffdnvkjnbd mv m kbdndjkvnkjndvjndjj");
-        addItemRight("Helloaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaddddddddddddddddddddddddddddddddddddddddddddddddcfwwffdnvkjnbd mv m kbdndjkvnkjndvjndjj");
-        addItemLeft("Helloaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaddddddddddddddddddddddddddddddddddddddddddddddddcfwwffdnvkjnbd mv m kbdndjkvnkjndvjndjj");
-        addItemRight("Helloaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaddddddddddddddddddddddddddddddddddddddddddddddddcfwwffdnvkjnbd mv m kbdndjkvnkjndvjndjj");
-        addItemLeft("Helloaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaddddddddddddddddddddddddddddddddddddddddddddddddcfwwffdnvkjnbd mv m kbdndjkvnkjndvjndjj");
-        addItemRight("Helloaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaddddddddddddddddddddddddddddddddddddddddddddddddcfwwffdnvkjnbd mv m kbdndjkvnkjndvjndjj");addItemLeft("Helloaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaddddddddddddddddddddddddddddddddddddddddddddddddcfwwffdnvkjnbd mv m kbdndjkvnkjndvjndjj");
-        addItemRight("Helloaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaddddddddddddddddddddddddddddddddddddddddddddddddcfwwffdnvkjnbd mv m kbdndjkvnkjndvjndjj");addItemLeft("Helloaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaddddddddddddddddddddddddddddddddddddddddddddddddcfwwffdnvkjnbd mv m kbdndjkvnkjndvjndjj");
-        addItemRight("Helloaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaddddddddddddddddddddddddddddddddddddddddddddddddcfwwffdnvkjnbd mv m kbdndjkvnkjndvjndjj");
+        addItemLeft("Helloaaaajkvnkjndvjndjj");
+        addItemRight("Helloaaaaaaaaaddddddddddcfwwffdnvkjnbd mv m kbdndjkvnkjndvjndjj");
+        addItemLeft("Helloaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaajndvjndjj");
+        addItemRight("Helloaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaavjndjj");
+        addItemLeft("Helloaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaafdnvkjnbd mv m kbdndjkvnkjndvjndjj");
+        addItemRight("Helloaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaddddddddddddddddddddddddddddd");
+        addItemLeft("Helloaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaddddddddddddddddddddddddddddddddddd");
+        addItemRight("Helloaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaddkbdndjkvnkjndvjndjj");
+        addItemLeft("Helloaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaadd");
+        addItemRight("Helloaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa");
+        addItemLeft("Hellokjndvjndjj");
+        addItemRight("Helljndvjndjj");
         
         
     }

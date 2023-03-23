@@ -21,17 +21,21 @@
   <Layout>
     <DimensionLayout dim="0">
       <Group type="103" groupAlignment="0" attributes="0">
-          <Component id="chat_Title1" max="32767" attributes="0"/>
           <Component id="chat_Bottom1" alignment="0" max="32767" attributes="0"/>
           <Component id="chatBody" alignment="0" pref="727" max="32767" attributes="0"/>
+          <Group type="102" alignment="0" attributes="0">
+              <EmptySpace max="-2" attributes="0"/>
+              <Component id="chat_Title2" max="32767" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
+          </Group>
       </Group>
     </DimensionLayout>
     <DimensionLayout dim="1">
       <Group type="103" groupAlignment="0" attributes="0">
           <Group type="102" alignment="0" attributes="0">
-              <Component id="chat_Title1" min="-2" max="-2" attributes="0"/>
+              <Component id="chat_Title2" min="-2" max="-2" attributes="0"/>
               <EmptySpace min="0" pref="0" max="-2" attributes="0"/>
-              <Component id="chatBody" pref="593" max="32767" attributes="0"/>
+              <Component id="chatBody" pref="573" max="32767" attributes="0"/>
               <EmptySpace min="0" pref="0" max="-2" attributes="0"/>
               <Component id="chat_Bottom1" min="-2" max="-2" attributes="0"/>
           </Group>
@@ -39,21 +43,6 @@
     </DimensionLayout>
   </Layout>
   <SubComponents>
-    <Container class="com.app.component.Chat_Title" name="chat_Title1">
-
-      <Layout>
-        <DimensionLayout dim="0">
-          <Group type="103" groupAlignment="0" attributes="0">
-              <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
-          </Group>
-        </DimensionLayout>
-        <DimensionLayout dim="1">
-          <Group type="103" groupAlignment="0" attributes="0">
-              <EmptySpace min="0" pref="40" max="32767" attributes="0"/>
-          </Group>
-        </DimensionLayout>
-      </Layout>
-    </Container>
     <Container class="com.app.component.Chat_Bottom" name="chat_Bottom1">
 
       <Layout>
@@ -70,6 +59,8 @@
       </Layout>
     </Container>
     <Component class="com.app.component.Chat_Body" name="chatBody">
+    </Component>
+    <Component class="com.app.component.Chat_Title" name="chat_Title2">
     </Component>
   </SubComponents>
 </Form>

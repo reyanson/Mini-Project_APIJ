@@ -26,22 +26,11 @@ public class Chat extends javax.swing.JPanel {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        chat_Title1 = new com.app.component.Chat_Title();
         chat_Bottom1 = new com.app.component.Chat_Bottom();
         chatBody = new com.app.component.Chat_Body();
+        chat_Title2 = new com.app.component.Chat_Title();
 
         setBackground(new java.awt.Color(249, 249, 249));
-
-        javax.swing.GroupLayout chat_Title1Layout = new javax.swing.GroupLayout(chat_Title1);
-        chat_Title1.setLayout(chat_Title1Layout);
-        chat_Title1Layout.setHorizontalGroup(
-            chat_Title1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 0, Short.MAX_VALUE)
-        );
-        chat_Title1Layout.setVerticalGroup(
-            chat_Title1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 40, Short.MAX_VALUE)
-        );
 
         javax.swing.GroupLayout chat_Bottom1Layout = new javax.swing.GroupLayout(chat_Bottom1);
         chat_Bottom1.setLayout(chat_Bottom1Layout);
@@ -58,16 +47,19 @@ public class Chat extends javax.swing.JPanel {
         this.setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(chat_Title1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
             .addComponent(chat_Bottom1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
             .addComponent(chatBody, javax.swing.GroupLayout.DEFAULT_SIZE, 727, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(chat_Title2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addContainerGap())
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addComponent(chat_Title1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(chat_Title2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(0, 0, 0)
-                .addComponent(chatBody, javax.swing.GroupLayout.DEFAULT_SIZE, 593, Short.MAX_VALUE)
+                .addComponent(chatBody, javax.swing.GroupLayout.DEFAULT_SIZE, 573, Short.MAX_VALUE)
                 .addGap(0, 0, 0)
                 .addComponent(chat_Bottom1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
@@ -77,6 +69,6 @@ public class Chat extends javax.swing.JPanel {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private com.app.component.Chat_Body chatBody;
     private com.app.component.Chat_Bottom chat_Bottom1;
-    private com.app.component.Chat_Title chat_Title1;
+    private com.app.component.Chat_Title chat_Title2;
     // End of variables declaration//GEN-END:variables
 }
