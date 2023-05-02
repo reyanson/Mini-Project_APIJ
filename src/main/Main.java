@@ -51,6 +51,7 @@ import my_swing.Send_Photo_Box_New;
 import my_swing.Send_Sound;
 import my_swing.Send_Sound_New;
 
+
 public class Main extends javax.swing.JFrame {
     
 
@@ -542,12 +543,16 @@ public class Main extends javax.swing.JFrame {
                     }
                 } catch (Exception e) {
                     String ms = e.getMessage();
-                    if (ms.equals("Socket closed")) {
-                        signOut("Sign out");
-                    } else if (ms.equals("Connection reset")) {
-                        signOut("Server has error");
-                    } else {
-                        signOut("Error : " + ms);
+                    switch (ms) {
+                        case "Socket closed":
+                            signOut("Sign out");
+                            break;
+                        case "Connection reset":
+                            signOut("Server has error");
+                            break;
+                        default:
+                            signOut("Error : " + ms);
+                            break;
                     }
 
                 }

@@ -46,7 +46,7 @@ public class Login extends javax.swing.JFrame {
         jLabel6 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setPreferredSize(new java.awt.Dimension(652, 500));
+        setTitle("Chat Application");
 
         jPanel1.setBackground(new java.awt.Color(13, 36, 53));
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
